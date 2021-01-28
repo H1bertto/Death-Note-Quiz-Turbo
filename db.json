@@ -1,0 +1,43 @@
+{
+    "bg": "https://images7.alphacoders.com/609/609606.jpg",
+    "title": "Quiz do Death Note da Alura",
+    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/Z6iLzMvdhKdNK/source.gif",
+        "title": "Como a primeira vítima de Light Yagami morreu?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "Estrangulado",
+          "Atropelado",
+          "Afogado",
+          "Ataque cardíaco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#b71c1c",
+        "secondary": "#c54949",
+        "mainBg": "#801313",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
+  }
