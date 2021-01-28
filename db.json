@@ -1,18 +1,18 @@
 {
-    "bg": "https://wallpapercave.com/wp/wp4676983.jpg",
-    "title": "Quiz CSS da Alura",
+    "bg": "https://images7.alphacoders.com/609/609606.jpg",
+    "title": "Quiz do Death Note da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/Z6iLzMvdhKdNK/source.gif",
+        "title": "Como a primeira vítima de Light Yagami morreu?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Estrangulado",
+          "Atropelado",
+          "Afogado",
+          "Ataque cardíaco"
         ]
       },
       {
