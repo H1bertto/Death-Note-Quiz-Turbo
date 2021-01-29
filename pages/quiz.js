@@ -60,7 +60,7 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit }) {
         }}
         >
           {question.alternatives.map((alternative, index) => {
-            const alternativeId = `alternative ${index}`;
+            const alternativeId = `alternative_${index}`;
             return (
               <Widget.Topic
                 as="label"
@@ -93,6 +93,7 @@ const screenStates = {
 export default function QuizPage() {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
+  // const [acertos, setAcertos] = React.useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
   const totalQuestions = db.questions.length;

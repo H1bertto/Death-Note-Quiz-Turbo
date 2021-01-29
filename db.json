@@ -1,28 +1,69 @@
 {
     "bg": "https://images7.alphacoders.com/609/609606.jpg",
-    "title": "Quiz do Death Note da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz do Death Note",
+    "description": "Teste os seus conhecimentos sobre Death Note, acha que consegue acertar todos? Então vamos ver...",
     "questions": [
       {
         "image": "https://media.giphy.com/media/Z6iLzMvdhKdNK/source.gif",
         "title": "Como a primeira vítima de Light Yagami morreu?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "description": "Vamos lá, essa é tranquila!",
+        "answer": 3,
         "alternatives": [
-          "Estrangulado",
-          "Atropelado",
-          "Afogado",
-          "Ataque cardíaco"
+          "Estrangulado.",
+          "Atropelado.",
+          "Afogado.",
+          "Ataque cardíaco."
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://media.giphy.com/media/tptFQ8QAJYYvu/source.gif",
+        "title": "Qual o nome do(a) prisioneiro(a) que L usou em sua armadilha para Kira?",
+        "description": "Não sei como você erraria essa",
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Kiyomi Takada.",
+           "Link l. Taylor.",
+           "Lind L. Tailor.",
+           "Raye Penber."
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/PDaVAruWpT8pW/source.gif",
+        "title": "Quando soubemos que um Shinigami deu sua vida em troca de Misa, qual era a arma de seu perseguidor?",
+        "description": "Vamos complicar um pouco mais.",
+        "answer": 1,
+        "alternatives": [
+           "Uma pistola comum.",
+           "Uma faca.",
+           "Um canivete.",
+           "Um taco de beisebol."
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/CFWFSmOyHclS8/source.gif",
+        "title": "Quem é o dono do primeiro caderno que caiu no mundo dos humanos?",
+        "description": "Hahaha quero ver essa então!",
+        "answer": 3,
+        "alternatives": [
+           "Rem.",
+           "Ryuk.",
+           "Gelus.",
+           "Sidoh.",
+           "Midora.",
+           "Zellogi."
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/gysS4T0YsTKdq/source.gif",
+        "title": "Por que a Rem matou Watari e L?",
+        "description": "Vou ser bonzinho, uma de graça para você.",
+        "answer": 4,
+        "alternatives": [
+           "Por eles estarem quase comprovando que Light é Kira, a Rem os mata antes.",
+           "Ryuk a convenceu para salvar a Misa Amane.",
+           "Porque iriam destruir seu caderno.",
+           "Kira a força a matá-los para não descobrir que ele é o Kira.",
+           "Por conta da manobra de Light, iriam prender Misa Amane por ser o Segundo Kira, ocasionando na pena de morte."
         ]
       }
     ],
