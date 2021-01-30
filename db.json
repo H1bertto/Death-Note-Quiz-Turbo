@@ -68,7 +68,12 @@
       }
     ],
     "external": [
-      ""
+      "https://pato-quiz-nextjs.theedouglasam.vercel.app/",
+      "https://aluraquiz-coffee.leonardot07.vercel.app/",
+      "https://1sec-quiz.victoroda.vercel.app/",
+      "https://flash-quiz-next.davidlpc1.vercel.app/",
+      "https://harry-potter-quiz.brunogerbasi.vercel.app/",
+      "https://hollow-knight-quiz.lugusfe.vercel.app/"
     ],
     "theme": {
       "colors": {
