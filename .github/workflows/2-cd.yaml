@@ -22,9 +22,11 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          gh repo set-base main -b main # Configure a branch do GitHub Pages (pode ser 'gh-pages' ou 'main')
-          gh repo set-base main -B main # Defina a branch principal
-          gh-pages -d out # Substitua 'build' pelo diretório de saída do seu aplicativo
+          git config --global user.email "
+          git checkout -b gh-pages
+          git rm -rf .
+          git add -f dist
+          git commit -m "Deploy to GitHub Pages"
+          git push -f origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
