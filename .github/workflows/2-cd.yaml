@@ -17,16 +17,11 @@ jobs:
           node-version: 20
       - name: Install Dependencies
         run: npm install
-      - name: Build
-        run: npm run build
+      - name: Run Tests
+        run: npm run test:ci
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "
-          git checkout -b gh-pages
-          git rm -rf .
-          git add -f dist
-          git commit -m "Deploy to GitHub Pages"
-          git push -f origin gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: out
+      
