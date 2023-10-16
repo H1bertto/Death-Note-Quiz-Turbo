@@ -11,6 +11,7 @@ import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import Link from '../src/components/Link';
+import Formulario from '../src/components/Formulario';
 
 export default function Home() {
   const router = useRouter();
