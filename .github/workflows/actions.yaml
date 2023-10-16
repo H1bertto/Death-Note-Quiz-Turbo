@@ -42,14 +42,20 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build # Substitua pelo comando de construção do seu aplicativo
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          gh repo set-base main -b main # Configure a branch do GitHub Pages (pode ser 'gh-pages' ou 'main')
-          gh repo set-base main -B main # Defina a branch principal
-          gh-pages -d build # Substitua 'build' pelo diretório de saída do seu aplicativo
+          git checkout main # Certifique-se de estar na branch 'main'
+          git pull # Atualize o repositório
+          git branch -D gh-pages # Exclua a branch 'gh-pages' se ela já existir
+          git checkout --orphan gh-pages
+          git reset --hard
+          mv out/* . # Mova os arquivos da pasta 'out' para a raiz do projeto
+          git add -A
+          git commit -m "Deploy to GitHub Pages"
+          git push -f origin gh-pages
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
