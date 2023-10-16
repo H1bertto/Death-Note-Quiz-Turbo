@@ -25,4 +25,4 @@ jobs:
         run: npm install
 
       - name: Run Jest Tests
-        run: npm test # Ou o comando que você usa para executar seus testes com Jest
+        run: npm run test # Ou o comando que você usa para executar seus testes com Jest
