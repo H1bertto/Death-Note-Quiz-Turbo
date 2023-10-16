@@ -35,7 +35,7 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>Informe seu nome</p>
-            <form onSubmit={(event) => {
+            <Formulario onSubmit={(event) => {
               event.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}
@@ -51,7 +51,7 @@ export default function Home() {
               <Button type="submit" disabled={name.length === 0}>
                 {`Jogar ${name}`}
               </Button>
-            </form>
+            </Formulario>
           </Widget.Content>
         </Widget>
 
