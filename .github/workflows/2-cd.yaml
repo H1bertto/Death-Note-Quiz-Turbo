@@ -3,7 +3,7 @@ name: CD
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   deploy:
@@ -14,16 +14,23 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 20
+          node-version: 14
       - name: Install Dependencies
         run: npm install
-      - name: Run Tests
-        run: npm run test:ci
-      - name: Run Build
+      - name: Build
         run: npm run build
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .next
-      
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout develop
+          git pull
+          git branch -D gh-pages
+          git checkout --orphan gh-pages
+          git reset --hard
+          mv out/* .
+          git add -A
+          git commit -m "Deploy to GitHub Pages"
+          git push -f origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
