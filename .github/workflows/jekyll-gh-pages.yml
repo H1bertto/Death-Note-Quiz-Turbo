@@ -37,6 +37,16 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Run Tests
+        run: npm run test:ci
 
   # Deployment job
   deploy:
@@ -48,19 +58,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 20
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Run Tests
-        run: npm run test:ci
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GB_TOKEN }}
       - name: Next Pages
           # You may pin to the exact commit or the version.
           # uses: anorcle/next-pages@6dd024cae9ee363e45374395011d46d00e9ccd1b
@@ -70,18 +72,3 @@ jobs:
           inputDir: ./.next
           # GitHub Pages Host Directory
           outputDir: ./docs
-      - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git checkout main
-          git pull
-          git branch -D gh-pages
-          git checkout --orphan gh-pages
-          git reset --hard
-          mv out/* .
-          git add -A
-          git commit -m "Deploy to GitHub Pages"
-          git push -f origin gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GB_TOKEN }}
