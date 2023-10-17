@@ -37,16 +37,7 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 20
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Run Tests
-        run: npm run test:ci
+
 
   # Deployment job
   deploy:
@@ -58,6 +49,16 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Run Tests
+        run: npm run test:ci
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
@@ -69,6 +70,6 @@ jobs:
         uses: anorcle/next-pages@v1.0
         with:
           # Next.js Export Directory
-          inputDir: ./.next
+          inputDir: ./out
           # GitHub Pages Host Directory
           outputDir: ./docs
