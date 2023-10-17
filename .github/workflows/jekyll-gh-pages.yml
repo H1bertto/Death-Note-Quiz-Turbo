@@ -70,6 +70,6 @@ jobs:
         uses: anorcle/next-pages@v1.0
         with:
           # Next.js Export Directory
-          inputDir: ./out
+          inputDir: ./.next/server
           # GitHub Pages Host Directory
           outputDir: ./docs
