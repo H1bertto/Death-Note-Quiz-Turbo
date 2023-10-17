@@ -50,8 +50,8 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: anorcle/next-pages@6dd024cae9ee363e45374395011d46d00e9ccd1b
         uses: anorcle/next-pages@v1.0
-        with:
-          # Next.js Export Directory
-          inputDir: ./out # optional, default is ./out
-          # GitHub Pages Host Directory
-          outputDir: .docs # optional, default is ./docs
+        # with:
+        #   # Next.js Export Directory
+        #   inputDir: ./out # optional, default is ./out
+        #   # GitHub Pages Host Directory
+        #   outputDir: ./docs # optional, default is ./docs
