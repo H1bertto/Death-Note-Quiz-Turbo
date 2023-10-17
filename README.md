@@ -6,9 +6,9 @@ Criado por HugoPoletto34
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/HugoPoletto34/Death-Note-Quiz?quickstart=1)
 
-Alunos:
-Hugo Poletto
-Humberto Vieira
-Yollanda Lima
-Vitor Salen
+Alunos:\
+Hugo Poletto\
+Humberto Vieira\
+Yollanda Lima\
+Vitor Salen\
 Leonardo Almeida
