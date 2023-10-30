@@ -4,14 +4,12 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci --coverage",
     "eslint:init": "eslint --init",
-    "lint": "eslint ./ --fix",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d out"
+    "lint": "eslint ./ --fix"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
