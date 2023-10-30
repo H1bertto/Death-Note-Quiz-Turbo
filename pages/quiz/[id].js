@@ -1,11 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import QuizScreen from '../../src/screens/Quiz';
-import axios from 'axios';
 import { useRouter } from 'next/router';
-import { headers } from '../../next.config';
 
 export default function QuizDaGalera() {
   const router = useRouter();
