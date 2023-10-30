@@ -1,4 +1,5 @@
 {
+  "homepage": "https://h1bertto.github.io/Death-Note-Quiz-Turbo",
   "name": "with-styled-components",
   "version": "1.0.0",
   "scripts": {
@@ -8,7 +9,9 @@
     "test": "jest --watch",
     "test:ci": "jest --ci --coverage",
     "eslint:init": "eslint --init",
-    "lint": "eslint ./ --fix"
+    "lint": "eslint ./ --fix",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
