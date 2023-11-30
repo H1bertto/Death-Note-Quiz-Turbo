@@ -53,6 +53,8 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Testes unitários
+        run: npm run test:ci
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
