@@ -53,6 +53,8 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Setup Jest
+        run: npm install --save-dev jest
       - name: Testes unitários
         run: npm run test:ci
       - name: Setup Pages
