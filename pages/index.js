@@ -49,8 +49,11 @@ export default function Home() {
                 value={name}
                 name="nomeDoUsuario"
               />
+              <p>
+                {`${name} Vamos Jogar?`}
+              </p>
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Iniciar`}
               </Button>
             </Formulario>
           </Widget.Content>
