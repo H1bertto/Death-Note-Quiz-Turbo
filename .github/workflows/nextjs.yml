@@ -88,7 +88,7 @@ jobs:
   deploy:
     environment:
       name: homologation-pages
-      url: "https://h1bertto.github.io/Death-Note-Quiz-Turbo/develop/${{ steps.deployment.outputs.page_url }}"
+      url: "${{ steps.deployment.outputs.page_url }}/develop"
     runs-on: ubuntu-latest
     needs: build
     steps:
