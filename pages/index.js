@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import {db} from '../db.js';
+import { useEffect } from 'react';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
