@@ -101,6 +101,44 @@ export const db = {
            "Uma pessoa.",
            "Quatro pessoas."
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/eGYdSIQtETAGs/giphy.gif",
+        "title": "Qual a cor da última página do Death Note?",
+        "description": "Mwaahahahaha",
+        "answer": 0,
+        "alternatives": [
+           "Vermelha",
+           "Preta",
+           "Azul",
+           "Branco",
+           "Marrom",
+           "Roxo",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmNza2NzcXowajRsYnh4YnB5MjE2dXc5dHIxM2IwZ3FxbGllZm5wbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dlGGZOXy8aWyI/giphy.gif",
+        "title": "O que o L mais gosta de comer?",
+        "description": "Hmmmm... que delícia",
+        "answer": 4,
+        "alternatives": [
+           "Maçã",
+           "Uva",
+           "Carne de Porco",
+           "Pessoas",
+           "Sua mãe",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/eikYviWoOJ0UU/giphy.gif",
+        "title": "Por que o Kira é pegou o Death Note?",
+        "description": "Hmmmm... que delícia",
+        "answer": 1,
+        "alternatives": [
+           "Porque ele quiz",
+           "Porque sem isso não tinha anime",
+           "Porque o nome dele estava escrito lá",
+        ]
       }
     ],
     "external": [
