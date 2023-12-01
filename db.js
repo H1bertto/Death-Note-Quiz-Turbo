@@ -119,8 +119,8 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/eikYviWoOJ0UU/giphy.gif",
-        "title": "Por que o Kira é pegou o Death Note?",
-        "description": "Hmmmm... que delícia",
+        "title": "Por que o Kira pegou o Death Note?",
+        "description": "Anime Death Note oh yeah",
         "answer": 1,
         "alternatives": [
            "Porque ele quiz",
