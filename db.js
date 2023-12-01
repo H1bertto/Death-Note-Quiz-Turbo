@@ -77,6 +77,30 @@ export const db = {
            "Kira a força a matá-los para não descobrir que ele é o Kira.",
            "Por conta da manobra de Light, iriam prender Misa Amane por ser o Segundo Kira, ocasionando na pena de morte."
         ]
+      },
+      {
+        "image": "https://kanto.legiaodosherois.com.br/w750-h450-k1/wp-content/uploads/2021/11/legiao_kuDoKHFcLV80.jpg.webp",
+        "title": "Após a morte de L, qual o nome dos personagens que o sucederam na investigação??",
+        "description": "Essa da para acertar em.",
+        "answer": 1,
+        "alternatives": [
+           "Near e Nello.",
+           "Near e Mello.",
+           "Misa e Mello.",
+           "Lear e Nello."
+        ]
+      },
+      {
+        "image": "https://kanto.legiaodosherois.com.br/w750-h450-k1/wp-content/uploads/2021/11/legiao_OghqIT6NHBKL.jpg.webp",
+        "title": "Quantas pessoas criaram a obra original?",
+        "description": "Só pra quem conhece de verdade",
+        "answer": 0,
+        "alternatives": [
+           "Duas pessoas.",
+           "Três pessoas.",
+           "Uma pessoa.",
+           "Quatro pessoas."
+        ]
       }
     ],
     "external": [
