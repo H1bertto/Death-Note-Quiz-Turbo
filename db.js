@@ -16,6 +16,18 @@ export const db = {
         ]
       },
       {
+        "image": "https://media.giphy.com/media/Z6iLzMvdhKdNK/source.gif",
+        "title": "Como a primeira vítima de Light Yagami morreu?",
+        "description": "Vamos lá, essa é tranquila!",
+        "answer": 3,
+        "alternatives": [
+          "Estrangulado.",
+          "Atropelado.",
+          "Afogado.",
+          "Ataque cardíaco."
+        ]
+      },
+      {
         "image": "https://media.giphy.com/media/tptFQ8QAJYYvu/source.gif",
         "title": "Qual o nome do(a) prisioneiro(a) que L usou em sua armadilha para Kira?",
         "description": "Não sei como você erraria essa",

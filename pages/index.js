@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowIntro(false);
-    }, 1000); // Aguarda 7 segundos antes de esconder a introdução
+    }, 1700); // Aguarda 1.7 segundos antes de esconder a introdução
 
     return () => clearTimeout(timer); // Limpeza do timer
   }, []); // Array vazio significa que este efeito roda apenas uma vez após o render inicial
