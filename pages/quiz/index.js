@@ -156,7 +156,6 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit, set
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          <p>{selectedAlternative !== undefined ? `Você escolheu: ${selectedAlternative + 1}` : ''}</p>
         </form>
       </Widget.Content>
     </Widget>
