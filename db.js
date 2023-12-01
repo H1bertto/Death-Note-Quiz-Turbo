@@ -1,4 +1,4 @@
-{
+export const db = {
     "bg": "https://images7.alphacoders.com/609/609606.jpg",
     "title": "Quiz do Death Note",
     "description": "Teste os seus conhecimentos sobre Death Note, acha que consegue acertar todos? Então vamos ver...",

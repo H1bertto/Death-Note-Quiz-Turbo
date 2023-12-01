@@ -7,6 +7,7 @@ import QuizContainer from '../../components/QuizContainer';
 import Button from '../../components/Button';
 import LoadingWidget from '../../components/LoadingWidget';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import { useRouter } from 'next/router';
 
 function ResultWidget({ totalQuestions, userWrongQuestions }) {
   const media = ((totalQuestions - userWrongQuestions.questions.length) / totalQuestions) * 100;
@@ -160,7 +161,13 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit, set
   );
 }
 
+function asd() {
+  
+  console.log("AMOR")
+}
+
 export default function QuizPage({ externalQuestions, externalBg }) {
+  const { query } = useRouter();
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
@@ -172,6 +179,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   });
 
   React.useEffect(() => {
+    console.log("SADasd")
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 1000);
@@ -194,6 +202,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
 
   function handleSubmit() {
     setScreenState(screenStates.LOADING);
+    console.log(query.name)
 
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
@@ -205,7 +214,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
       }
     }, 1 * 1000);
   }
-
+  
   return (
     <QuizBackground backgroundImage={externalBg}>
       <QuizContainer>

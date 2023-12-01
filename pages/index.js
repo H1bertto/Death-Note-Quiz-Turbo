@@ -1,8 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import db from '../db.json';
+import {db} from '../db.js';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
