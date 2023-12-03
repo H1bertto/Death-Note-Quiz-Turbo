@@ -127,13 +127,12 @@ export const db = {
         "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmNza2NzcXowajRsYnh4YnB5MjE2dXc5dHIxM2IwZ3FxbGllZm5wbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dlGGZOXy8aWyI/giphy.gif",
         "title": "O que o L mais gosta de comer?",
         "description": "Hmmmm... que delícia",
-        "answer": 4,
+        "answer": 0,
         "alternatives": [
           "Maçã",
           "Uva",
           "Carne de Porco",
           "Pessoas",
-          "Sua mãe",
           "Bolinhos de arroz",
           "Chocolate"
         ]
@@ -167,74 +166,89 @@ export const db = {
           "Rem",
           "Mello"
         ]
-     },
-     {
-      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
-      "title": "Como Light Yagami descobre o Death Note?",
-      "description": "Teste seus conhecimentos sobre o início de Death Note!",
-      "answer": 0,
-      "alternatives": [
-        "Ele o encontra no chão",
-        "Ele o recebe como presente de aniversário",
-        "Ele compra de uma loja de antiguidades",
-        "Ele encontra na biblioteca da escola",
-        "Ryuk dá a ele",
-        "Ele o encontra durante uma investigação",
-        "Ele recebe de Misa Amane"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
-      "title": "Quem foi o primeiro personagem a descobrir a identidade real de L?",
-      "description": "Teste seus conhecimentos sobre o início de Death NoteNesta reviravolta crucial da trama, um personagem desvenda o mistério por trás da identidade enigmática de L!",
-      "answer": 0,
-      "alternatives": [
-        "Light Yagami",
-        "Misa Amane",
-        "Near",
-        "Ryuk",
-        "Soichiro Yagami",
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
-      "title": "Qual é o nome da instituição de ensino onde Light Yagami estudava quando encontrou o Death Note?",
-      "description": "Será que você conhece tudo mesmo sobre a trama?",
-      "answer": 2,
-      "alternatives": [
-        "Colégio Wammy's", 
-        "Academia Daikoku",
-        "Escola Secundária Meiou", 
-        "Universidade To-Oh", 
-        "Instituto Task Force"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
-      "title": "Como Mello, um dos sucessores de L, costumava se distinguir visualmente?",
-      "description": "Mello, um dos personagens cativantes que sucedeu L na busca por Kira, tinha uma peculiaridade visual marcante. Você lembre qual?",
-      "answer": 1,
-      "alternatives": [
-        "Usando um chapéu de palha",
-        "Comendo constantemente chocolate",
-        "Vestindo roupas brancas",
-        "Carregando um caderno especial",
-        "Sempre com óculos escuros",
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
-      "title": "Qual era o nome do olho do Shinigami que permitia ver o nome e a data da morte das pessoas?",
-      "description": "Adentre o místico mundo dos Shinigamis e seu peculiar conjunto de habilidades.",
-      "answer": 0,
-      "alternatives": [
-        "Olho do Destino",
-        "Olho da Morte",
-        "Olho do Conhecimento",
-        "Olho do Além",
-        "Olho da Revelação",
-      ]
-    }
+      },
+      {
+        "image": "https://media.giphy.com/media/tbyjrIX9NlZ8k/giphy.gif",
+        "title": "Quantos episódios tem death note?",
+        "description": "Descubra se você é um verdadeiro fã de Death Note!",
+        "answer": 1,
+        "alternatives": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Como Light Yagami descobre o Death Note?",
+        "description": "Teste seus conhecimentos sobre o início de Death Note!",
+        "answer": 0,
+        "alternatives": [
+          "Ele o encontra no chão",
+          "Ele o recebe como presente de aniversário",
+          "Ele compra de uma loja de antiguidades",
+          "Ele encontra na biblioteca da escola",
+          "Ryuk dá a ele",
+          "Ele o encontra durante uma investigação",
+          "Ele recebe de Misa Amane"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Quem foi o primeiro personagem a descobrir a identidade real de L?",
+        "description": "Teste seus conhecimentos sobre o início de Death NoteNesta reviravolta crucial da trama, um personagem desvenda o mistério por trás da identidade enigmática de L!",
+        "answer": 0,
+        "alternatives": [
+          "Light Yagami",
+          "Misa Amane",
+          "Near",
+          "Ryuk",
+          "Soichiro Yagami",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Qual é o nome da instituição de ensino onde Light Yagami estudava quando encontrou o Death Note?",
+        "description": "Será que você conhece tudo mesmo sobre a trama?",
+        "answer": 2,
+        "alternatives": [
+          "Colégio Wammy's", 
+          "Academia Daikoku",
+          "Escola Secundária Meiou", 
+          "Universidade To-Oh", 
+          "Instituto Task Force"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Como Mello, um dos sucessores de L, costumava se distinguir visualmente?",
+        "description": "Mello, um dos personagens cativantes que sucedeu L na busca por Kira, tinha uma peculiaridade visual marcante. Você lembre qual?",
+        "answer": 1,
+        "alternatives": [
+          "Usando um chapéu de palha",
+          "Comendo constantemente chocolate",
+          "Vestindo roupas brancas",
+          "Carregando um caderno especial",
+          "Sempre com óculos escuros",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Qual era o nome do olho do Shinigami que permitia ver o nome e a data da morte das pessoas?",
+        "description": "Adentre o místico mundo dos Shinigamis e seu peculiar conjunto de habilidades.",
+        "answer": 0,
+        "alternatives": [
+          "Olho do Destino",
+          "Olho da Morte",
+          "Olho do Conhecimento",
+          "Olho do Além",
+          "Olho da Revelação",
+        ]
+      }
     ],
     "external": [
       "https://pato-quiz-nextjs.theedouglasam.vercel.app/",
