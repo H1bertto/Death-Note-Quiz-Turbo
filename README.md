@@ -2,7 +2,7 @@
 Gerência de Configuração de Software - Engenharia de Software\
 Pontifícia Universidade Católica de Minas Gerais - Praça da Liberdade
 
-### Descrição:
+## Descrição:
 Os conhecimentos de Gestão de Configuração de Software são fundamentais no ciclo de vida de um produto de software. Esse trabalho pr ́atico pretende consolidar os conhecimentos teóricos estudados durante a disciplina e demais conhecimentos ao longo da vida acadêmica do aluno. Dessa forma, o aluno estará preparado para desempenhar as suas atividades como Engenheiro de Software da melhor maneira possível. Os alunos devem desenvolver um software em qualquer linguagem de programacão, aplicando as ferramentas de deploy automático, testes, continuous integration e continuous delivery, DevOps, Docker e Kubernetes.
 
 ## Trabalho: Death Note Quiz
