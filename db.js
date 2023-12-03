@@ -7,12 +7,15 @@ export const db = {
         "image": "https://media.giphy.com/media/Z6iLzMvdhKdNK/source.gif",
         "title": "Como a primeira vítima de Light Yagami morreu?",
         "description": "Vamos lá, essa é tranquila!",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
           "Estrangulado.",
           "Atropelado.",
           "Afogado.",
-          "Ataque cardíaco."
+          "Ataque cardíaco.",
+          "Envenenado.",
+          "Sufocado.",
+          "Queimado."
         ]
       },
       {
@@ -21,49 +24,58 @@ export const db = {
         "description": "Não sei como você erraria essa",
         "answer": 2,
         "alternatives": [
-           "Kiyomi Takada.",
-           "Link l. Taylor.",
-           "Lind L. Tailor.",
-           "Raye Penber."
+          "Kiyomi Takada.",
+          "Link l. Taylor.",
+          "Lind L. Tailor.",
+          "Raye Penber.",
+          "Naomi Misora.",
+          "Misa Amane.",
+          "Soichiro Yagami."
         ]
       },
       {
         "image": "https://media.giphy.com/media/PDaVAruWpT8pW/source.gif",
         "title": "Quando soubemos que um Shinigami deu sua vida em troca de Misa, qual era a arma de seu perseguidor?",
         "description": "Vamos complicar um pouco mais.",
-        "answer": 1,
+        "answer": 0,
         "alternatives": [
-           "Uma pistola comum.",
-           "Uma faca.",
-           "Um canivete.",
-           "Um taco de beisebol."
+          "Uma pistola comum.",
+          "Uma faca.",
+          "Um canivete.",
+          "Um taco de beisebol.",
+          "Um machado.",
+          "Uma espada.",
+          "Um revolver."
         ]
       },
       {
         "image": "https://media.giphy.com/media/CFWFSmOyHclS8/source.gif",
         "title": "Quem é o dono do primeiro caderno que caiu no mundo dos humanos?",
         "description": "Hahaha quero ver essa então!",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
-           "Rem.",
-           "Ryuk.",
-           "Gelus.",
-           "Sidoh.",
-           "Midora.",
-           "Zellogi."
+          "Rem.",
+          "Ryuk.",
+          "Gelus.",
+          "Sidoh.",
+          "Midora.",
+          "Zellogi.",
+          "Jealous."
         ]
       },
       {
         "image": "https://media.giphy.com/media/gysS4T0YsTKdq/source.gif",
         "title": "Por que a Rem matou Watari e L?",
         "description": "Vou ser bonzinho, uma de graça para você.",
-        "answer": 4,
+        "answer": 3,
         "alternatives": [
-           "Por eles estarem quase comprovando que Light é Kira, a Rem os mata antes.",
-           "Ryuk a convenceu para salvar a Misa Amane.",
-           "Porque iriam destruir seu caderno.",
-           "Kira a força a matá-los para não descobrir que ele é o Kira.",
-           "Por conta da manobra de Light, iriam prender Misa Amane por ser o Segundo Kira, ocasionando na pena de morte."
+          "Por eles estarem quase comprovando que Light é Kira, a Rem os mata antes.",
+          "Ryuk a convenceu para salvar a Misa Amane.",
+          "Porque iriam destruir seu caderno.",
+          "Kira a força a matá-los para não descobrir que ele é o Kira.",
+          "Por conta da manobra de Light, iriam prender Misa Amane por ser o Segundo Kira, ocasionando na pena de morte.",
+          "Por vingança pessoal.",
+          "Para proteger Near e Mello."
         ]
       },
       {
@@ -72,10 +84,13 @@ export const db = {
         "description": "Essa da para acertar em.",
         "answer": 1,
         "alternatives": [
-           "Near e Nello.",
-           "Near e Mello.",
-           "Misa e Mello.",
-           "Lear e Nello."
+          "Near e Nello.",
+          "Near e Mello.",
+          "Misa e Mello.",
+          "Lear e Nello.",
+          "Light e Near.",
+          "Ryuk e Rem.",
+          "Soichiro e Matsuda."
         ]
       },
       {
@@ -84,10 +99,13 @@ export const db = {
         "description": "Só pra quem conhece de verdade",
         "answer": 0,
         "alternatives": [
-           "Duas pessoas.",
-           "Três pessoas.",
-           "Uma pessoa.",
-           "Quatro pessoas."
+          "Duas pessoas.",
+          "Três pessoas.",
+          "Uma pessoa.",
+          "Quatro pessoas.",
+          "Cinco pessoas.",
+          "Seis pessoas.",
+          "Nove pessoas."
         ]
       },
       {
@@ -96,12 +114,13 @@ export const db = {
         "description": "Mwaahahahaha",
         "answer": 0,
         "alternatives": [
-           "Vermelha",
-           "Preta",
-           "Azul",
-           "Branco",
-           "Marrom",
-           "Roxo",
+          "Vermelha",
+          "Preta",
+          "Azul",
+          "Branco",
+          "Marrom",
+          "Roxo",
+          "Amarela"
         ]
       },
       {
@@ -110,24 +129,60 @@ export const db = {
         "description": "Hmmmm... que delícia",
         "answer": 4,
         "alternatives": [
-           "Maçã",
-           "Uva",
-           "Carne de Porco",
-           "Pessoas",
-           "Sua mãe",
+          "Maçã",
+          "Uva",
+          "Carne de Porco",
+          "Pessoas",
+          "Sua mãe",
+          "Bolinhos de arroz",
+          "Chocolate"
         ]
       },
       {
         "image": "https://media.giphy.com/media/eikYviWoOJ0UU/giphy.gif",
-        "title": "Por que o Kira pegou o Death Note?",
-        "description": "Anime Death Note oh yeah",
-        "answer": 1,
+        "title": "Qual foi o motivo que levou Kira a obter o Death Note?",
+        "description": "Teste seus conhecimentos sobre o anime Death Note!",
+        "answer": 2,
         "alternatives": [
-           "Porque ele quiz",
-           "Porque sem isso não tinha anime",
-           "Porque o nome dele estava escrito lá",
+          "Porque ele decidiu experimentar o poder do Death Note",
+          "Porque sem isso não teríamos um enredo interessante no anime",
+          "Porque encontrou o nome dele escrito nas páginas",
+          "Porque estava curioso sobre o caderno que caiu do céu",
+          "Porque queria vingança contra os criminosos",
+          "Para se tornar o deus do novo mundo",
+          "Porque achou que poderia fazer um uso melhor do caderno"
         ]
-      }
+      },
+      {
+        "image": "https://media.giphy.com/media/tbyjrIX9NlZ8k/giphy.gif",
+        "title": "Quem é o protagonista de Death Note?",
+        "description": "Descubra se você é um verdadeiro fã de Death Note!",
+        "answer": 3,
+        "alternatives": [
+          "L",
+          "Misa Amane",
+          "Near",
+          "Light Yagami",
+          "Ryuk",
+          "Rem",
+          "Mello"
+        ]
+     },
+     {
+      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+      "title": "Como Light Yagami descobre o Death Note?",
+      "description": "Teste seus conhecimentos sobre o início de Death Note!",
+      "answer": 0,
+      "alternatives": [
+        "Ele o encontra no chão",
+        "Ele o recebe como presente de aniversário",
+        "Ele compra de uma loja de antiguidades",
+        "Ele encontra na biblioteca da escola",
+        "Ryuk dá a ele",
+        "Ele o encontra durante uma investigação",
+        "Ele recebe de Misa Amane"
+      ]
+    }
     ],
     "external": [
       "https://pato-quiz-nextjs.theedouglasam.vercel.app/",
