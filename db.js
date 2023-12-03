@@ -127,13 +127,12 @@ export const db = {
         "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmNza2NzcXowajRsYnh4YnB5MjE2dXc5dHIxM2IwZ3FxbGllZm5wbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dlGGZOXy8aWyI/giphy.gif",
         "title": "O que o L mais gosta de comer?",
         "description": "Hmmmm... que delícia",
-        "answer": 4,
+        "answer": 0,
         "alternatives": [
           "Maçã",
           "Uva",
           "Carne de Porco",
           "Pessoas",
-          "Sua mãe",
           "Bolinhos de arroz",
           "Chocolate"
         ]
@@ -167,22 +166,37 @@ export const db = {
           "Rem",
           "Mello"
         ]
-     },
-     {
-      "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
-      "title": "Como Light Yagami descobre o Death Note?",
-      "description": "Teste seus conhecimentos sobre o início de Death Note!",
-      "answer": 0,
-      "alternatives": [
-        "Ele o encontra no chão",
-        "Ele o recebe como presente de aniversário",
-        "Ele compra de uma loja de antiguidades",
-        "Ele encontra na biblioteca da escola",
-        "Ryuk dá a ele",
-        "Ele o encontra durante uma investigação",
-        "Ele recebe de Misa Amane"
-      ]
-    }
+      },
+      {
+        "image": "https://media.giphy.com/media/tbyjrIX9NlZ8k/giphy.gif",
+        "title": "Quantos episódios tem death note?",
+        "description": "Descubra se você é um verdadeiro fã de Death Note!",
+        "answer": 1,
+        "alternatives": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Como Light Yagami descobre o Death Note?",
+        "description": "Teste seus conhecimentos sobre o início de Death Note!",
+        "answer": 0,
+        "alternatives": [
+          "Ele o encontra no chão",
+          "Ele o recebe como presente de aniversário",
+          "Ele compra de uma loja de antiguidades",
+          "Ele encontra na biblioteca da escola",
+          "Ryuk dá a ele",
+          "Ele o encontra durante uma investigação",
+          "Ele recebe de Misa Amane"
+        ]
+      }
     ],
     "external": [
       "https://pato-quiz-nextjs.theedouglasam.vercel.app/",
