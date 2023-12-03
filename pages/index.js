@@ -71,12 +71,12 @@ export default function Home() {
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
-                placeholder="(prometo não escrever no Death Note)"
+                placeholder="(Prometo não escrever no Death Note)"
                 value={name}
                 name="nomeDoUsuario"
               />
               <p>
-                {`${name} Vamos Jogar?`}
+                {`Vamos Jogar ${name}?`}
               </p>
               <Button type="submit" disabled={name.length === 0}>
                 {`Iniciar`}

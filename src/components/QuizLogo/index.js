@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function Logo({ className }) {
   return (
     <div>
-      <img src="https://pbs.twimg.com/media/EQrcSjhWkAA2eYE?format=jpg&name=medium" 
+      <img src="https://cdn.culturagenial.com/imagens/death-note-cartaz.jpg" 
       width={150}/>
     </div>
   );

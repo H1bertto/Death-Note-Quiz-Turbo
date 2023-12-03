@@ -36,7 +36,7 @@ export default function Footer(props) {
       </svg>
       </a>
       <p>
-        Trabalho modificado pelos alunos da PUC Minas na Matéria de Gêrenciamento
+        Trabalho modificado pelos alunos da PUC Minas na Matéria de Gerência de Configuração e Evolução de Software
         {' '}
         {' '}
       </p>

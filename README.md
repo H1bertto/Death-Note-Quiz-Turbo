@@ -19,8 +19,12 @@ Esse trabalho foi baseado em fazer melhorias no projeto do nosso colega Hugo Pol
 - Melhoria no Botão de Inciar o Quiz
 
 ### Yollanda Lima:
-### Vitor Salen:
+### Vitor Salem:
 ### Leonardo Almeida:
+-Inclusão de algumas perguntas
+-Nova imagem de logo
+-Pequenos ajustes visuais
+-Inserção do link do repositório e logo no canto superior esquerdo
 
 
 ### Alunos:
