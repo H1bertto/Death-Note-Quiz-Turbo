@@ -196,6 +196,58 @@ export const db = {
           "Ele o encontra durante uma investigação",
           "Ele recebe de Misa Amane"
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Quem foi o primeiro personagem a descobrir a identidade real de L?",
+        "description": "Teste seus conhecimentos sobre o início de Death NoteNesta reviravolta crucial da trama, um personagem desvenda o mistério por trás da identidade enigmática de L!",
+        "answer": 0,
+        "alternatives": [
+          "Light Yagami",
+          "Misa Amane",
+          "Near",
+          "Ryuk",
+          "Soichiro Yagami",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Qual é o nome da instituição de ensino onde Light Yagami estudava quando encontrou o Death Note?",
+        "description": "Será que você conhece tudo mesmo sobre a trama?",
+        "answer": 2,
+        "alternatives": [
+          "Colégio Wammy's", 
+          "Academia Daikoku",
+          "Escola Secundária Meiou", 
+          "Universidade To-Oh", 
+          "Instituto Task Force"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Como Mello, um dos sucessores de L, costumava se distinguir visualmente?",
+        "description": "Mello, um dos personagens cativantes que sucedeu L na busca por Kira, tinha uma peculiaridade visual marcante. Você lembre qual?",
+        "answer": 1,
+        "alternatives": [
+          "Usando um chapéu de palha",
+          "Comendo constantemente chocolate",
+          "Vestindo roupas brancas",
+          "Carregando um caderno especial",
+          "Sempre com óculos escuros",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "title": "Qual era o nome do olho do Shinigami que permitia ver o nome e a data da morte das pessoas?",
+        "description": "Adentre o místico mundo dos Shinigamis e seu peculiar conjunto de habilidades.",
+        "answer": 0,
+        "alternatives": [
+          "Olho do Destino",
+          "Olho da Morte",
+          "Olho do Conhecimento",
+          "Olho do Além",
+          "Olho da Revelação",
+        ]
       }
     ],
     "external": [
