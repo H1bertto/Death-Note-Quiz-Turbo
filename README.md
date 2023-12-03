@@ -21,10 +21,10 @@ Esse trabalho foi baseado em fazer melhorias no projeto do nosso colega Hugo Pol
 ### Yollanda Lima:
 ### Vitor Salem:
 ### Leonardo Almeida:
--Inclusão de algumas perguntas
--Nova imagem de logo
--Pequenos ajustes visuais
--Inserção do link do repositório e logo no canto superior esquerdo
+- Inclusão de algumas perguntas
+- Nova imagem de logo
+- Pequenos ajustes visuais
+- Inserção do link do repositório e logo no canto superior esquerdo
 
 
 ### Alunos:
