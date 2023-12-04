@@ -19,6 +19,10 @@ Esse trabalho foi baseado em fazer melhorias no projeto do nosso colega Hugo Pol
 - Melhoria no Botão de Inciar o Quiz
 
 ### Yollanda Lima:
+- Inclusão de Novas Perguntas
+- Inclusão de Notas Alternativas nas Perguntas
+- Inclusão de Imagens nas Novas Perguntas
+
 ### Vitor Salem:
 ### Leonardo Almeida:
 - Inclusão de algumas perguntas
