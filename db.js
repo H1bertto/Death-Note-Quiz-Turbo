@@ -248,6 +248,62 @@ export const db = {
           "Olho do Além",
           "Olho da Revelação",
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/newgcf6ThMpAc/giphy.gif",
+        "title": "Qual é o nome do detetive que trabalha com L na investigação de Kira?",
+        "description": "Vamos testar sua memória sobre os personagens de Death Note!",
+        "answer": 4,
+        "alternatives": [
+          "Soichiro Yagami",
+          "Naomi Misora",
+          "Raye Penber",
+          "Matsuda Touta",
+          "Hideki Ide",
+          "Teru Mikami"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/12Jbmj1RxBGmV2/giphy.gif",
+        "title": "Qual é o verdadeiro nome de L?",
+        "description": "L é um dos personagens mais enigmáticos de Death Note. Você lembra do seu verdadeiro nome?",
+        "answer": 2,
+        "alternatives": [
+          "Lawliet",
+          "Lind L. Tailor",
+          "Daisuke Aramaki",
+          "Nate River",
+          "Roger Smith",
+          "Near"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/XHRK3eFazMQjm/giphy.gif",
+        "title": "Qual é a ocupação profissional de Light Yagami antes de encontrar o Death Note?",
+        "description": "Antes de se tornar Kira, Light tinha uma vida comum. Qual era sua ocupação?",
+        "answer": 3,
+        "alternatives": [
+          "Advogado",
+          "Médico",
+          "Estudante",
+          "Policial",
+          "Jornalista",
+          "Professor"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3o7WTtHgmM6G6gf9Re/giphy.gif",
+        "title": "Quem é o criador do Death Note?",
+        "description": "Vamos ver se você conhece a origem do objeto central em Death Note.",
+        "answer": 0,
+        "alternatives": [
+          "Tsugumi Ohba",
+          "Hajime Isayama",
+          "Masashi Kishimoto",
+          "Eiichiro Oda",
+          "Kazuki Takahashi",
+          "Haruichi Furudate"
+        ]
       }
     ],
     "external": [
