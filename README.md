@@ -26,6 +26,10 @@ Esse trabalho foi baseado em fazer melhorias no projeto do nosso colega Hugo Pol
 - Ajustes README
 
 ### Vitor Salem:
+- Inclusão de novas perguntas
+- Ajustes README
+- Gerencimaneto de padrões de PR
+- Padrões de commit
 
 ### Yollanda Lima:
 - Inclusão de Novas Perguntas
