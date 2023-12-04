@@ -37,4 +37,4 @@ Hugo Poletto\
 Humberto Vieira\
 Leonardo Almeida\
 Vitor Salem\
-Yollanda Lima\
+Yollanda Lima
