@@ -19,5 +19,7 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    "react/jsx-no-bind": [ "error", { "ignoreDOMComponents": true } ],
+
   },
 };

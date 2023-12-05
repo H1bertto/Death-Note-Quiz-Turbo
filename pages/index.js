@@ -1,7 +1,8 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
-import db from '../db.json';
+import {db} from '../db.js';
+import { useEffect } from 'react';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
@@ -11,10 +12,34 @@ import Button from '../src/components/Button';
 import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
 import Link from '../src/components/Link';
+import Formulario from '../src/components/Formulario';
+import IntroQuiz from '../src/components/IntroQuiz';
 
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
+  const [showIntro, setShowIntro] = React.useState(true); // Novo estado para controlar a exibição da introdução
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowIntro(false);
+    }, 1700); // Aguarda 1.7 segundos antes de esconder a introdução
+
+    return () => clearTimeout(timer); // Limpeza do timer
+  }, []); // Array vazio significa que este efeito roda apenas uma vez após o render inicial
+
+
+  if (showIntro) {
+    return (
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <h1>Bem-vindo ao Quiz de Death Note!</h1>
+          <p>Aguarde, preparando tudo para você...</p>
+          {/* Pode colocar alguma animação ou ícone de carregamento aqui */}
+        </QuizContainer>
+      </QuizBackground>
+    );
+  }
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -44,12 +69,16 @@ export default function Home() {
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
-                placeholder="(prometo não escrever no Death Note)"
+                
+                placeholder="(Prometo não escrever no Death Note)"
                 value={name}
                 name="nomeDoUsuario"
               />
+              <p>
+                {`Vamos Jogar ${name}?`}
+              </p>
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Iniciar`}
               </Button>
             </Formulario>
           </Widget.Content>

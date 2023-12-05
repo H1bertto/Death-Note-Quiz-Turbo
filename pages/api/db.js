@@ -1,4 +1,4 @@
-import db from '../../db.json';
+import {db} from '../../db.js';
 
 export default function dbHandler(req, res) {
   if (req.method === 'OPTIONS') {
