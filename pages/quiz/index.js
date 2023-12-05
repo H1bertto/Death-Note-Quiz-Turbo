@@ -8,17 +8,40 @@ import QuizContainer from '../../src/components/QuizContainer';
 import Button from '../../src/components/Button';
 import LoadingWidget from '../../src/components/LoadingWidget';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
-import Link from 'next/link.js';
+import { useRouter } from 'next/router';
 
-function ResultWidget({ totalQuestions, userWrongQuestions }) {
+function ResultWidget({ difficulty, totalQuestions, userWrongQuestions }) {
   const media = ((totalQuestions.length - userWrongQuestions.questions.length) / totalQuestions.length) * 100;
+  const router = useRouter();
+  const { name } = router.query;
+
+  React.useEffect(() => {
+      setTimeout(() => {
+        if (!localStorage.getItem('userScore-' + difficulty)) {
+          localStorage.setItem('userScore-' + difficulty, `{
+            "name": "${name}",
+            "media": ${media}
+          }`);
+        } else {
+          const userScore = JSON.parse(localStorage.getItem('userScore-' + difficulty));
+          if (userScore.media < media) {
+            localStorage.setItem('userScore-' + difficulty, `{
+              "name": "${name}",
+              "media": ${media}
+            }`);
+          }
+        }
+      }, 5 * 1000);
+    }
+  );
+
   return (
     <>
       <Widget>
         <Widget.Header>
           <BackLinkArrow href="/" />
           <h3>
-            {`Sua média foi de ${media}% de acerto!`}
+            {`${name}, sua média foi de ${Math.round(media)}% de acerto!`}
           </h3>
         </Widget.Header>
 
@@ -50,6 +73,20 @@ function ResultWidget({ totalQuestions, userWrongQuestions }) {
 
 function SelectDifficulty({ difficulty, setDifficulty, handleSubmit }) {
 
+
+  function resultadoUser(difficultylabel) {
+    const resultado = localStorage.getItem('userScore-' + difficultylabel);
+    if (resultado) {
+      console.log(resultado)
+      const userScore = JSON.parse(resultado);
+      if (userScore) {
+        return `- (${userScore.media}%)`;
+      }
+    }
+
+  }
+  
+
   return (
     <Widget>
       <Widget.Header>
@@ -77,7 +114,7 @@ function SelectDifficulty({ difficulty, setDifficulty, handleSubmit }) {
               value="FACIL"
               onChange={() => setDifficulty(selectDifficult.FACIL)}
             />
-            {selectDifficult.FACIL}
+            {selectDifficult.FACIL} {resultadoUser(selectDifficult.FACIL)}
           </Widget.Topic>
           <Widget.Topic
             as="label"
@@ -316,6 +353,7 @@ export default function QuizPage() {
         {screenState === screenStates.RESULT
           && (
             <ResultWidget
+              difficulty={difficulty}
               totalQuestions={db.questions.filter((question) => question.dificuldade == difficulty)}
               userWrongQuestions={userWrongQuestions}
             />

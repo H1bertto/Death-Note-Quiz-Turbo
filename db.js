@@ -61,7 +61,7 @@ export const db = {
         "title": "Quem é o dono do primeiro caderno que caiu no mundo dos humanos?",
         "dificuldade": "Médio",
         "description": "Hahaha quero ver essa então!",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
           "Rem.",
           "Ryuk.",
@@ -93,7 +93,7 @@ export const db = {
         "title": "Após a morte de L, qual o nome dos personagens que o sucederam na investigação??",
         "description": "Essa da para acertar em.",
         "dificuldade": "Fácil",
-        "answer": 1,
+        "answer": 0,
         "alternatives": [
           "Near e Mello.",
           "Misa e Mello.",
@@ -136,7 +136,7 @@ export const db = {
         "dificuldade": "Fácil",
         "title": "Qual foi o motivo que levou Kira a obter o Death Note?",
         "description": "Teste seus conhecimentos sobre o anime Death Note!",
-        "answer": 2,
+        "answer": 5,
         "alternatives": [
           "Porque ele decidiu experimentar o poder do Death Note",
           "Porque sem isso não teríamos um enredo interessante no anime",
