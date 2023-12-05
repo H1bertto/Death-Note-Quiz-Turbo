@@ -28,8 +28,6 @@ export default function Home() {
     return () => clearTimeout(timer); // Limpeza do timer
   }, []); // Array vazio significa que este efeito roda apenas uma vez após o render inicial
 
-  // Seu código existente para exibir o formulário
-  // ...
 
   if (showIntro) {
     return (
@@ -71,6 +69,7 @@ export default function Home() {
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
+                
                 placeholder="(Prometo não escrever no Death Note)"
                 value={name}
                 name="nomeDoUsuario"

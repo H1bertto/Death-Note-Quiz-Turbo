@@ -2,9 +2,15 @@ export const db = {
     "bg": "https://images7.alphacoders.com/609/609606.jpg",
     "title": "Quiz do Death Note",
     "description": "Teste os seus conhecimentos sobre Death Note, acha que consegue acertar todos? Então vamos ver...",
+    "dificuldades": [
+      'Fácil',
+      'Médio',
+      'Difícil',
+    ],
     "questions": [
       {
         "image": "https://media.giphy.com/media/Z6iLzMvdhKdNK/source.gif",
+        "dificuldade": 'Fácil',
         "title": "Como a primeira vítima de Light Yagami morreu?",
         "description": "Vamos lá, essa é tranquila!",
         "answer": 2,
@@ -21,6 +27,7 @@ export const db = {
       {
         "image": "https://media.giphy.com/media/tptFQ8QAJYYvu/source.gif",
         "title": "Qual o nome do(a) prisioneiro(a) que L usou em sua armadilha para Kira?",
+        "dificuldade": 'Fácil',
         "description": "Não sei como você erraria essa",
         "answer": 2,
         "alternatives": [
@@ -36,6 +43,7 @@ export const db = {
       {
         "image": "https://media.giphy.com/media/PDaVAruWpT8pW/source.gif",
         "title": "Quando soubemos que um Shinigami deu sua vida em troca de Misa, qual era a arma de seu perseguidor?",
+        "dificuldade": "Dificil",
         "description": "Vamos complicar um pouco mais.",
         "answer": 0,
         "alternatives": [
@@ -51,8 +59,9 @@ export const db = {
       {
         "image": "https://media.giphy.com/media/CFWFSmOyHclS8/source.gif",
         "title": "Quem é o dono do primeiro caderno que caiu no mundo dos humanos?",
+        "dificuldade": "Médio",
         "description": "Hahaha quero ver essa então!",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
           "Rem.",
           "Ryuk.",
@@ -66,6 +75,7 @@ export const db = {
       {
         "image": "https://media.giphy.com/media/gysS4T0YsTKdq/source.gif",
         "title": "Por que a Rem matou Watari e L?",
+        "temporada": "Médio",
         "description": "Vou ser bonzinho, uma de graça para você.",
         "answer": 3,
         "alternatives": [
@@ -82,12 +92,11 @@ export const db = {
         "image": "https://kanto.legiaodosherois.com.br/w750-h450-k1/wp-content/uploads/2021/11/legiao_kuDoKHFcLV80.jpg.webp",
         "title": "Após a morte de L, qual o nome dos personagens que o sucederam na investigação??",
         "description": "Essa da para acertar em.",
-        "answer": 1,
+        "dificuldade": "Fácil",
+        "answer": 0,
         "alternatives": [
-          "Near e Nello.",
           "Near e Mello.",
           "Misa e Mello.",
-          "Lear e Nello.",
           "Light e Near.",
           "Ryuk e Rem.",
           "Soichiro e Matsuda."
@@ -96,6 +105,7 @@ export const db = {
       {
         "image": "https://kanto.legiaodosherois.com.br/w750-h450-k1/wp-content/uploads/2021/11/legiao_OghqIT6NHBKL.jpg.webp",
         "title": "Quantas pessoas criaram a obra original?",
+        "dificuldade": "Médio",
         "description": "Só pra quem conhece de verdade",
         "answer": 0,
         "alternatives": [
@@ -109,39 +119,24 @@ export const db = {
         ]
       },
       {
-        "image": "https://media.giphy.com/media/eGYdSIQtETAGs/giphy.gif",
-        "title": "Qual a cor da última página do Death Note?",
-        "description": "Mwaahahahaha",
-        "answer": 0,
-        "alternatives": [
-          "Vermelha",
-          "Preta",
-          "Azul",
-          "Branco",
-          "Marrom",
-          "Roxo",
-          "Amarela"
-        ]
-      },
-      {
         "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmNza2NzcXowajRsYnh4YnB5MjE2dXc5dHIxM2IwZ3FxbGllZm5wbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dlGGZOXy8aWyI/giphy.gif",
         "title": "O que o L mais gosta de comer?",
+        "dificuldade": "Fácil",
         "description": "Hmmmm... que delícia",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
           "Maçã",
           "Uva",
-          "Carne de Porco",
-          "Pessoas",
-          "Bolinhos de arroz",
+          "Doces",
           "Chocolate"
         ]
       },
       {
         "image": "https://media.giphy.com/media/eikYviWoOJ0UU/giphy.gif",
+        "dificuldade": "Fácil",
         "title": "Qual foi o motivo que levou Kira a obter o Death Note?",
         "description": "Teste seus conhecimentos sobre o anime Death Note!",
-        "answer": 2,
+        "answer": 5,
         "alternatives": [
           "Porque ele decidiu experimentar o poder do Death Note",
           "Porque sem isso não teríamos um enredo interessante no anime",
@@ -154,21 +149,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/tbyjrIX9NlZ8k/giphy.gif",
-        "title": "Quem é o protagonista de Death Note?",
-        "description": "Descubra se você é um verdadeiro fã de Death Note!",
-        "answer": 3,
-        "alternatives": [
-          "L",
-          "Misa Amane",
-          "Near",
-          "Light Yagami",
-          "Ryuk",
-          "Rem",
-          "Mello"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/tbyjrIX9NlZ8k/giphy.gif",
+        "dificuldade": "Difícil",
         "title": "Quantos episódios tem death note?",
         "description": "Descubra se você é um verdadeiro fã de Death Note!",
         "answer": 1,
@@ -184,6 +165,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "dificuldade": "Fácil",
         "title": "Como Light Yagami descobre o Death Note?",
         "description": "Teste seus conhecimentos sobre o início de Death Note!",
         "answer": 0,
@@ -199,11 +181,13 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "dificuldade": "Médio",
         "title": "Quem foi o primeiro personagem a descobrir a identidade real de L?",
         "description": "Teste seus conhecimentos sobre o início de Death NoteNesta reviravolta crucial da trama, um personagem desvenda o mistério por trás da identidade enigmática de L!",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
           "Light Yagami",
+          "Agentes do FBI",
           "Misa Amane",
           "Near",
           "Ryuk",
@@ -212,6 +196,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "dificuldade": "Difícil",
         "title": "Qual é o nome da instituição de ensino onde Light Yagami estudava quando encontrou o Death Note?",
         "description": "Será que você conhece tudo mesmo sobre a trama?",
         "answer": 2,
@@ -225,6 +210,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "dificuldade": "Médio",
         "title": "Como Mello, um dos sucessores de L, costumava se distinguir visualmente?",
         "description": "Mello, um dos personagens cativantes que sucedeu L na busca por Kira, tinha uma peculiaridade visual marcante. Você lembre qual?",
         "answer": 1,
@@ -238,6 +224,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/l1J9vo1OxCxUQfib6/giphy.gif",
+        "dificuldade": "Fácil",
         "title": "Qual era o nome do olho do Shinigami que permitia ver o nome e a data da morte das pessoas?",
         "description": "Adentre o místico mundo dos Shinigamis e seu peculiar conjunto de habilidades.",
         "answer": 0,
@@ -251,6 +238,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/newgcf6ThMpAc/giphy.gif",
+        "dificuldade": "Médio",
         "title": "Qual é o nome do detetive que trabalha com L na investigação de Kira?",
         "description": "Vamos testar sua memória sobre os personagens de Death Note!",
         "answer": 4,
@@ -265,9 +253,10 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/12Jbmj1RxBGmV2/giphy.gif",
+        "dificuldade": "Difícil",
         "title": "Qual é o verdadeiro nome de L?",
         "description": "L é um dos personagens mais enigmáticos de Death Note. Você lembra do seu verdadeiro nome?",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
           "Lawliet",
           "Lind L. Tailor",
@@ -279,6 +268,7 @@ export const db = {
       },
       {
         "image": "https://media.giphy.com/media/XHRK3eFazMQjm/giphy.gif",
+        "dificuldade": "Fácil",
         "title": "Qual é a ocupação profissional de Light Yagami antes de encontrar o Death Note?",
         "description": "Antes de se tornar Kira, Light tinha uma vida comum. Qual era sua ocupação?",
         "answer": 3,
@@ -292,7 +282,89 @@ export const db = {
         ]
       },
       {
+        "image": "https://media.giphy.com/media/eikYviWoOJ0UU/giphy.gif",
+        "dificuldade": "Difícil",
+        "title": "Qual o estilo de luta do L?",
+        "description": "Lembra das brigas do Light e do L?",
+        "answer": 2,
+        "alternatives": [
+          "Judô",
+          "Tae Kwon Do",
+          "Capoeira",
+          "Karatê",
+          "Boxe",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/H1tRAKpdiLMsM/giphy.gif",
+        "dificuldade": "Difícil",
+        "title": "Qual o tipo sanguíneo do Near?",
+        "description": "Ih, complicou hein",
+        "answer": 4,
+        "alternatives": [
+          "A-",
+          "O",
+          "AB+",
+          "B-",
+          "B+",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/H1tRAKpdiLMsM/giphy.gif",
+        "dificuldade": "Médio",
+        "title": "O que o L odeia?",
+        "description": "Ih, complicou hein",
+        "answer": 4,
+        "alternatives": [
+          "Doces",
+          "Kira",
+          "Desleixo",
+          "Meias",
+          "Mulheres burras",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/X3k9OvNZL7ccg/giphy.gif",
+        "dificuldade": "Médio",
+        "title": "O que o L odeia?",
+        "description": "Ih, complicou hein",
+        "answer": 3,
+        "alternatives": [
+          "Doces",
+          "Kira",
+          "Desleixo",
+          "Meias",
+          "Mulheres burras",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/dtw1FNnxY8TqU/giphy.gif",
+        "dificuldade": "Difícil",
+        "title": "Quantos filhos Aizawa tinha?",
+        "description": "Pergunta difícil para os fãs de Death Note.",
+        "answer": 1,
+        "alternatives": [
+          "1",
+          "2",
+          "3",
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/dtw1FNnxY8TqU/giphy.gif",
+        "dificuldade": "Médio",
+        "title": "Quantas crianças foram criadas para serem sucessores de L?",
+        "description": "Admito que nem eu lembro disso...",
+        "answer": 1,
+        "alternatives": [
+          "2",
+          "6",
+          "10",
+          "5",
+        ]
+      },
+      {
         "image": "https://media.giphy.com/media/3o7WTtHgmM6G6gf9Re/giphy.gif",
+        "dificuldade": "Médio",
         "title": "Quem é o criador do Death Note?",
         "description": "Vamos ver se você conhece a origem do objeto central em Death Note.",
         "answer": 0,
@@ -320,6 +392,7 @@ export const db = {
         "secondary": "#c54949",
         "mainBg": "#801313",
         "contrastText": "#FFFFFF",
+        "inputBackground": "#4e0000",
         "wrong": "#FF5722",
         "success": "#4CAF50"
       },
