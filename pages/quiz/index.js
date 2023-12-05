@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {db} from '../../db.js';
+import { db } from '../../db.js';
 import Widget from '../../src/components/Widget';
 import QuizLogo from '../../src/components/QuizLogo';
 import QuizBackground from '../../src/components/QuizBackground';
@@ -8,14 +8,18 @@ import QuizContainer from '../../src/components/QuizContainer';
 import Button from '../../src/components/Button';
 import LoadingWidget from '../../src/components/LoadingWidget';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
+import Link from 'next/link.js';
 
 function ResultWidget({ totalQuestions, userWrongQuestions }) {
-  const media = ((totalQuestions - userWrongQuestions.questions.length) / totalQuestions) * 100;
+  const media = ((totalQuestions.length - userWrongQuestions.questions.length) / totalQuestions.length) * 100;
   return (
     <>
       <Widget>
         <Widget.Header>
-          {`Sua média foi de ${media}% de acerto!`}
+          <BackLinkArrow href="/" />
+          <h3>
+            {`Sua média foi de ${media}% de acerto!`}
+          </h3>
         </Widget.Header>
 
         <Widget.Content>
@@ -28,8 +32,8 @@ function ResultWidget({ totalQuestions, userWrongQuestions }) {
           {Math.floor(media) >= 80 && Math.floor(media) <= 100
             && <p>Quer se juntar a mim na construção do novo mundo?</p>}
 
-          <p>{`Qtde. de perguntas: ${totalQuestions}`}</p>
-          <p>{`Acertos: ${totalQuestions - userWrongQuestions.questions.length}`}</p>
+          <p>{`Qtde. de perguntas: ${totalQuestions.length}`}</p>
+          <p>{`Acertos: ${totalQuestions.length - userWrongQuestions.questions.length}`}</p>
           <p>{`Erros: ${userWrongQuestions.questions.length}`}</p>
 
         </Widget.Content>
@@ -39,7 +43,76 @@ function ResultWidget({ totalQuestions, userWrongQuestions }) {
           question={question}
         />
       ))}
+
     </>
+  );
+}
+
+function SelectDifficulty({ difficulty, setDifficulty, handleSubmit }) {
+
+  return (
+    <Widget>
+      <Widget.Header>
+        <BackLinkArrow href="/" />
+        <h3>
+          Selecione a dificuldade
+        </h3>
+      </Widget.Header>
+
+      <Widget.Content>
+        <form onSubmit={(event) => {
+          event.preventDefault();
+          handleSubmit();
+        }}
+        >
+          <Widget.Topic
+            as="label"
+            htmlFor="FACIL"
+          >
+            <input
+              style={{ display: 'none' }}
+              type="radio"
+              id="FACIL"
+              name="difficulty"
+              value="FACIL"
+              onChange={() => setDifficulty(selectDifficult.FACIL)}
+            />
+            {selectDifficult.FACIL}
+          </Widget.Topic>
+          <Widget.Topic
+            as="label"
+            htmlFor="MEDIO"
+          >
+            <input
+              style={{ display: 'none' }}
+              type="radio"
+              id="MEDIO"
+              name="difficulty"
+              value="MEDIO"
+              onChange={() => setDifficulty(selectDifficult.MEDIO)}
+            />
+            {selectDifficult.MEDIO}
+          </Widget.Topic>
+          <Widget.Topic
+            as="label"
+            htmlFor="DIFICIL"
+          >
+            <input
+              style={{ display: 'none' }}
+              type="radio"
+              id="DIFICIL"
+              name="difficulty"
+              value="DIFICIL"
+              onChange={() => setDifficulty(selectDifficult.DIFICIL)}
+            />
+            {selectDifficult.DIFICIL}
+          </Widget.Topic>
+          {difficulty && <Button type="submit" disabled={!difficulty}>
+          {difficulty && `Iniciar no modo ${difficulty}`}
+          </Button>}
+        </form>
+      </Widget.Content>
+    </Widget>
   );
 }
 
@@ -91,12 +164,21 @@ function UserErrors({ question }) {
 
 const screenStates = {
   QUIZ: 'QUIZ',
+  SELECT_DIFFICULTY: 'SELECT_DIFFICULTY',
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
 
+const selectDifficult = {
+  FACIL: 'Fácil',
+  MEDIO: 'Médio',
+  DIFICIL: 'Difícil',
+};
+
+
 // eslint-disable-next-line object-curly-newline
 function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit, setUserScore }) {
+  console.log(question)
   const questionId = `question__${questionIndex}`;
   const [selectedAlternative, setSelectedAlternative] = React.useState();
   const isCorrect = selectedAlternative === question.answer;
@@ -131,6 +213,7 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit, set
         <form onSubmit={(event) => {
           event.preventDefault();
           setUserScore(isCorrect, selectedAlternative);
+          setSelectedAlternative(undefined);
           onSubmit();
         }}
         >
@@ -141,13 +224,17 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit, set
                 as="label"
                 key={alternativeId}
                 htmlFor={alternativeId}
+                style={{ backgroundColor: selectedAlternative === index ? '#4CAF50' : '' }}
               >
                 <input
-                  // style={{ display: 'none' }}
+                  style={{ display: 'none'}}
                   type="radio"
                   id={alternativeId}
                   name={questionId}
-                  onChange={() => setSelectedAlternative(index)}
+                  onChange={() => {
+                    setSelectedAlternative(index);                    
+
+                  }}
                 />
                 {alternative}
               </Widget.Topic>
@@ -166,8 +253,7 @@ export default function QuizPage() {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
-  const totalQuestions = db.questions.length;
+  const [difficulty, setDifficulty] = React.useState();
 
   const [userWrongQuestions] = React.useState({
     questions: [],
@@ -175,11 +261,12 @@ export default function QuizPage() {
 
   React.useEffect(() => {
     setTimeout(() => {
-      setScreenState(screenStates.QUIZ);
+      setScreenState(screenStates.SELECT_DIFFICULTY);
     }, 1 * 1000);
   }, []);
 
   function setUserScore(isCorrect, selectedAlternative) {
+    const question = db.questions.filter((question) => question.dificuldade == difficulty)[questionIndex];
     if (!isCorrect) {
       userWrongQuestions.questions.push({
         title: question.title,
@@ -196,16 +283,19 @@ export default function QuizPage() {
 
   function handleSubmit() {
     setScreenState(screenStates.LOADING);
+    setScreenState(screenStates.QUIZ);
+    const totalQuestions = db.questions.filter((question) => question.dificuldade == difficulty).length;
+    const nextQuestion = questionIndex + 1;
+    if (nextQuestion < totalQuestions) {
+      setCurrentQuestion(questionIndex + 1);
+    } else {
+      setScreenState(screenStates.RESULT);
+    }
+  }
 
-    setTimeout(() => {
-      setScreenState(screenStates.QUIZ);
-      const nextQuestion = questionIndex + 1;
-      if (nextQuestion < totalQuestions) {
-        setCurrentQuestion(questionIndex + 1);
-      } else {
-        setScreenState(screenStates.RESULT);
-      }
-    }, 1 * 1000);
+  function handleSelectDifficulty() {
+    setScreenState(screenStates.LOADING);
+    setScreenState(screenStates.QUIZ);
   }
 
   return (
@@ -216,9 +306,9 @@ export default function QuizPage() {
         {screenState === screenStates.LOADING && <LoadingWidget />}
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
-            question={question}
+            question={db.questions.filter((question) => question.dificuldade == difficulty)[questionIndex]}
             questionIndex={questionIndex}
-            totalQuestions={totalQuestions}
+            totalQuestions={db.questions.filter((question) => question.dificuldade == difficulty).length}
             onSubmit={handleSubmit}
             setUserScore={setUserScore}
           />
@@ -226,8 +316,16 @@ export default function QuizPage() {
         {screenState === screenStates.RESULT
           && (
             <ResultWidget
-              totalQuestions={totalQuestions}
+              totalQuestions={db.questions.filter((question) => question.dificuldade == difficulty)}
               userWrongQuestions={userWrongQuestions}
+            />
+          )}
+        {screenState === screenStates.SELECT_DIFFICULTY
+          && (
+            <SelectDifficulty
+              difficulty={difficulty}
+              setDifficulty={setDifficulty}
+              handleSubmit={handleSelectDifficulty}
             />
           )}
       </QuizContainer>
