@@ -13,6 +13,10 @@ Esse trabalho foi baseado em fazer melhorias no projeto do nosso colega Hugo Pol
 
 ## Proposta de Melhorias por cada Aluno:
 ### Hugo Poleto:
+- Seleção de dificuldades (Fácil, médio e dificil)
+- testes unitários
+- Novas perguntas
+- Mostrar o progresso de cada dificuldade atingida
 ### Humberto Vieira:
 - Inclusão do Componente de Boas Vindas
 - Inclusão de Novas Perguntas
